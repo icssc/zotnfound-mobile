@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "ZotnFound",
+    "slug": "zotnfound-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.stevenz9.zotnfoundmobile",
+      "buildNumber": "1.0.0",
+      "config": {
+        "googleMapsApiKey": "$GOOGLE_MAPS_API_KEY"
+      }
+    },
+    "android": {
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": ["android.permission.RECORD_AUDIO"],
+      "package": "com.stevenz9.zotnfoundmobile"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "ZotnFound need your permission to access your photo library",
+          "cameraPermission": "ZotnFound need your permission to access your camera"
+        }
+      ]
+    ],
+    "scheme": "zotnfoundmobile",
+    "extra": {
+      "eas": {
+        "projectId": "53c9c509-1035-4a27-ac84-f09d7ce636bc"
+      }
+    }
+  }
+}
